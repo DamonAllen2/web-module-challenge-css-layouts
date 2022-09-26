@@ -10,10 +10,10 @@ header h1{
 }
 nav a{
     display:inline-block;
-    padding:0.3% 0;
-    width: 4%;
+    padding:0.1% 0;
+    width: 75px;
+    height: 25px;
     text-align: center;
-    border-radius: 0;
     text-decoration: none;
     outline-color:black;
     outline-style: solid;
@@ -64,4 +64,72 @@ button{
 button a{
     text-decoration: none;
     color: black;
+}
+@media(max-width: 800px){
+    Header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+        padding: 5%;
+        margin: 2% 0;
+    }
+    .summary img{
+        width: 100%;
+        padding: 4%;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .pets{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .pets div{
+        width: 50%;
+    }
+
+}
+@media(max-width: 500px){
+    Header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav a{
+        padding: 5%;
+        margin: 2% 0;
+    }
+    .summary img{
+        width: 100%;
+        padding: 4%;
+    }
+    .summary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .pets{
+        display: flex;
+        justify-content: space-around;
+    }
+    .pets div{
+        width: 50%;
+    }
 }
